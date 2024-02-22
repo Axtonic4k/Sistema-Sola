@@ -1,0 +1,260 @@
+
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background-image: url('Espaço.jpg');
+    background-size:100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.Sistema-solar {
+    font-size: 10px;
+    width: 40em;
+    height: 40em;
+    position: relative;
+}
+.Sol {
+    position: absolute;
+    top: 15em;
+    left: 15em;
+    width: 10em;
+    height: 10em;
+    background-color: yellow;
+    background-image: url('Sol.jfif');
+    background-size: 260%;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    box-shadow: 0 0 10vh rgb(226, 122, 3);
+}
+
+
+
+.Terra,.Lua,.Mercúrio, .Vênus, .Marte, .Jupiter, .Saturno, .Urano ,.Netuno {
+    position: absolute;
+    border-style: solid;
+    border-color: white transparent transparent transparent;
+    border-width: 0.1em 0.1em 0 0;
+    border-radius: 50%;
+}
+
+
+
+.Mercúrio {
+    top: 10em;
+    left: 10em;
+    width: 20em;
+    height: 20em; 
+    animation: orbit 8s linear infinite;   
+}
+
+.Vênus{
+    top: 6em;
+    left: 6em;
+    width: 30em;
+    height: 30em; 
+    animation: orbit 6s linear infinite;
+}
+
+.Terra {
+    top: 1em;
+    left: 1em;
+    width: 40em;
+    height: 40em; 
+    animation: orbit 5s linear infinite;   
+}
+.Lua {
+    top: 4em;
+    right: 4.2em;
+    width: 3em;
+    height: 3em; 
+    animation: orbit 2s linear infinite;
+}
+
+.Marte {            
+    top: -6vh;
+    left: -5vh;
+    width: 50em;
+    height: 50em; 
+    animation: orbit 5.3s linear infinite;
+}
+
+.Jupiter{
+    top: -12vh;
+    left: -10vh;
+    width: 60em;
+    height: 60em; 
+    animation: orbit 6s linear infinite;
+}
+
+.Saturno{
+    top: -16vh;
+    left: -15vh;
+    width: 70em;
+    height: 70em; 
+    animation: orbit 7s linear infinite;
+}
+
+.Urano{
+    top: -20vh;
+    left: -20vh;
+    width: 80em;
+    height: 80em; 
+    animation: orbit 8s linear infinite;
+}
+
+.Netuno{
+    top: -25vh;
+    left: -25vh;
+    width: 90em;
+    height: 90em; 
+    animation: orbit 10s linear infinite;
+}
+
+
+
+
+.Mercúrio::before {
+    top: 2em;
+    right: 2.7em;
+    width: 1em;
+    height: 1em;
+    background-color: rgb(151, 129, 107);   
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+    background-image: url('Mercurio.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.Vênus::before {
+    top: 3.3em;
+    right: 4em;
+    width: 1.4em;
+    height: 1.4em;
+    background-color: rgb(233, 142, 50);   
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+    background-image: url('Vênus.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.Terra::before {
+    top: 5em;
+    right: 5.3em;
+    width: 1.3em;
+    height: 1.3em;
+    background-color: aqua;  
+    content: '';
+    position: absolute;
+    border-radius: 50%;  
+    background-image: url('Terra.png');
+    background-size: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.Lua::before {
+    top: 0.3em;
+    right: 0.2em;
+    width: 0.5em;
+    height: 0.5em;
+    background-color: silver;
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+    background-image: url('Lua.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.Marte::before {
+    top: 6em;
+    right: 7em;
+    width: 1.3em;
+    height: 1.3em; 
+    background-color: rgb(211, 165, 15);
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+    background-image: url('Marte.png');
+    background-size: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.Jupiter::before {
+    top: 5em;
+    right: 7.2em;
+    width: 5em;
+    height: 5em;
+    background-color: rgb(235, 189, 103);   
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+    background-image: url('Jupiter.png');
+    background-size: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.Saturno::before {
+    top: 9em;
+    right: 7em;
+    width: 4em;
+    height: 4em;
+    background-color: rgb(208, 221, 200);   
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+    background-image: url('Saturno.jfif');
+    background-size: 160%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.Urano::before {
+    top: 12em;
+    right: 10em;
+    width: 1.6em;
+    height: 1.6em;
+    background-color: rgb(0, 189, 247);   
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+    background-image: url('Urano.png');
+    background-size: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.Netuno::before {
+    top: 12.5em;
+    right: 12em;
+    width: 1.6em;
+    height: 1.6em;
+    background-color: rgb(0, 25, 247);   
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+    background-image: url('Netuno.png');
+    background-size: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+@keyframes orbit {
+    to {
+        transform: rotate(360deg);
+    }
+}
